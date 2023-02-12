@@ -1,0 +1,12 @@
+[package]
+name = "serial"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = [ "rt", "macros", "io-util", "io-std", "signal", "sync" ], default-features = false }
+tokio-serial = "5"
+clap = { version = "4", features = [ "derive" ] }
+giftwrap = "0.5.0"
